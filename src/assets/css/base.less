@@ -1,0 +1,159 @@
+@import "z-0.6.less";
+
+/*项目初始化样式*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea,
+button {
+  border: 0;
+  border-radius: 0;
+  outline: none;
+  appearance: none;
+  font-family: inherit;
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+html {
+  box-sizing: border-box;
+  touch-action: none;
+}
+
+html,
+body {
+  .w100();
+  .h100();
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+a:hover,
+a:focus,
+a:link {
+  text-decoration: none;
+}
+
+embed,
+iframe,
+img,
+object,
+video {
+  max-width: 100%;
+}
+
+table {
+  .w100();
+  .h100();
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+/*滚动条美化样式*/
+// ::-webkit-scrollbar-track {
+//     background-color: rgba(0,0,0,0);
+// }
+
+// ::-webkit-scrollbar {
+//     width: 10px;
+//     height: 10px;
+//     background-color: rgba(0,0,0,0);
+// }
+
+// ::-webkit-scrollbar-thumb {
+//     background-color:rgba(0,0,0,.3)
+// }
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/*正常情况下滑块的样式*/
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, .05);
+  border-radius: 10px;
+  -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1);
+}
+
+/*鼠标悬浮在该类指向的控件上时滑块的样式*/
+
+:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, .2);
+  border-radius: 10px;
+  -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1);
+}
+
+/*鼠标悬浮在滑块上时滑块的样式*/
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, .4);
+  -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1);
+}
+
+/*正常时候的主干部分*/
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  background-color: white;
+}
+
+/*鼠标悬浮在滚动条上的主干部分*/
+
+::-webkit-scrollbar-track:hover {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, .01);
+}
+
+body {
+  font-family: 微软雅黑;
+  .usn(@none: none);
+}
+
+[disabled] {
+  opacity: .8;
+}
+
+.pull-left {
+  float: left !important;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+.text-center {
+  .tc();
+}
+
+.text-left {
+  .tl();
+}
+
+.text-right {
+  .tr();
+}
